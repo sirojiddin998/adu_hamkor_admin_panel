@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: #f1f1f1 !important;
+}
+.header {
+  width: 100% !important;
+  position: fixed !important;
+  background-color: #1B2A47 !important;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+  height: 50px;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+.header .logo_adu{
+width: 15%;
+}
+.header .logo_adu h3{
+  font-size: 15px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100% ;
+}
+.header .header-panel{
+  width: 85%;
+  display: flex;
+  justify-content:space-between;
+}
+.header .menu-icon i{
+  width: auto;
+  height: 100%;
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.header .menu-iconbtn i{
+  display:none;
+}
+.header .menu-icon i:hover{
+  cursor: pointer;
+}
+.header .user{
+  display: flex;
+  width: auto;
+  height: 100%;
+  align-items: center;
+  
+}
+.header .user p{
+  color: #fff;
+  padding: 10px;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.header .user .user-img{
+  width: auto;
+  height: 100%;
+  padding: 10px;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .user-img img{
+  width: 4vh;
+  height: 4vh;
+  border-radius: 50%;
+}
+.wrapper .side-menu {
+  width: 15%;
+  left: 0;
+  top: 0;
+  background-color: #1B2A47;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  margin-top: 50px;
+}
+.wrapper.active .side-menu {
+  left: -300px;
+}
+.side-menu .logo .brand-img {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 5px auto;
+  border-radius: 50%;
+  top: 0;
+}
+.side-menu .logo .brand-img img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.side-menu .logo h1{
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+.side-menu .brand-name img{
+  width: 100%;
+}
+.side-menu ul{
+  width: 100%;
+  padding: 0;
+}
+.side-menu ul li {
+  list-style: none;
+  position: relative;
+  margin-top: 20px;
+  padding: 5px;
+}
+.side-menu ul li:hover{
+  cursor: pointer;
+  background-color: #141e31;
+}
+.side-menu li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding:2px 15px;
+}
+.side-menu li a .liSpan{
+  font-size: 20px;
+}
+.wrapper .section {
+  width: calc(100%-15%);
+  margin-left: 15%;
+  transition: all 0.5s ease;
+}
+
+.wrapper.active .side-menu {
+  left: -15%;
+}
+.wrapper.active .section {
+  margin-left: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.wrapper .section {
+  padding: 30px;
+}
+.wrapper .section .content{
+  margin-top: 50px;
+  padding: 30px;
+}
+@media (max-width:1200px){
+  .header .logo_adu{
+    width: 250px !important;
+    padding: 10px;
+    font-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    }
+  .side-menu{
+    width: 0 !important;
+    transition: all .3s ease !important;
+    position: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1;
+    overflow-x: hidden;
+  }
+  .show{
+    display: block;
+    z-index: 999;
+    transition: all .3s ease !important;
+    width: 250px !important;
+  }
+  .side-menu li a{
+    font-size: auto;
+  }
+  .header .menu-icon{
+    display: none;
+  }
+  .header .menu-iconbtn i{
+    width: auto;
+    height: 100%;
+    font-size: 20px;
+    padding: 10px;
+    color: #fff;
+    display:flex;
+    align-items: center;
+  }
+  .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+  }
+} 
